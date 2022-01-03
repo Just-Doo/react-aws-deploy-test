@@ -10,7 +10,7 @@ function App() {
 	let [like, likeChanger] = useState([0, 0, 0, 0]);
 		
 	function increaseLike1(){
-		let newlike = [...like];
+		let newlike = [...like]
 		newlike[0] = newlike[0]+1
 		likeChanger( 
 			newlike
@@ -20,7 +20,7 @@ function App() {
 	}
 
 	function increaseLike2(){
-		let newlike = [...like];
+		let newlike = [...like]
 		newlike[1] = newlike[1]+1
 		likeChanger( 
 			newlike
@@ -30,7 +30,7 @@ function App() {
 	}
 
 	function increaseLike3(){
-		let newlike = [...like];
+		let newlike = [...like]
 		newlike[2] = newlike[2]+1
 		likeChanger( 
 			newlike
@@ -40,7 +40,7 @@ function App() {
 	}
 
 	function increaseLike4(){
-		let newlike = [...like];
+		let newlike = [...like]
 		newlike[3] = newlike[3]+1
 		likeChanger( 
 			newlike
@@ -61,14 +61,17 @@ function App() {
 			(
 				<div className='list'>
 					<h2>
-						{ title[i] } 
-						<span onClick={ 
-							likeIncreaser[i]
-						 }>
-							like
-						</span> {like[i]};
+						{ title[i] }
 					</h2>
+
+					<span onClick={ likeIncreaser[i] }>
+						👍 
+					</span> 
+					<space></space>
+					{like[i]}
+
 					<p> 1월 2일 발행 </p>
+
 					<hr/>
 				</div>
 			)
@@ -96,13 +99,13 @@ function App() {
 
 			<div className='modal'>
 				<h2>
-					title
+					ModooSyntax : sytnax for everyone.
 				</h2>
 				<p>
-					date
+					2022.01.01
 				</p>
 				<p>
-					content
+					010-5506-7921
 				</p>
 			</div>
 		</div>
