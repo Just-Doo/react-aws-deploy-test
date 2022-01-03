@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-	let [title, titleChanger] = useState(['힙합', '발라드', 'UK팝', '펑크락']);
+	let [title, titleChanger] = useState(['소리', '문법', '표현', '컨텐츠']);
 
 	let [like, likeChanger] = useState([0, 0, 0, 0]);
 		
@@ -86,7 +86,7 @@ function App() {
 	return (
 		<div className="App">
 			<div className="black-nav">
-				<div style={ {color : 'blue', fontSize : '30px'} }>개발 BLog</div>
+				<div style={ {color : 'white', fontSize : '30px'} }>ModooSyntax : test build</div>
 			</div>
 			
 			<button onClick={ changeTitle }>chagner title</button>
