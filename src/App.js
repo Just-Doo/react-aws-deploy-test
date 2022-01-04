@@ -138,7 +138,7 @@ function App() {
 					<input type="text" id="fName" />
 					<label>Last Name :</label>
 					<input type="text" id="lName" />
-					<button type="button" 
+					<button
 						onClick={ ()=> {
 							this.callAPI( 
 								document.getElementById('fName').value, 
@@ -146,7 +146,7 @@ function App() {
 							);
 						}}
 					>
-						Call API
+						Call API/ 저장
 					</button>
 				</form>
 			</div>
