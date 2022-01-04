@@ -119,7 +119,6 @@ function App() {
 					<input type="text" id="lName" />
 					<button type="button" onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)">Call API</button>
 				</form>
-
 			</div>
 
 			
