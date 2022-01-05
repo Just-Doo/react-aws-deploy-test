@@ -68,7 +68,6 @@ function App() {
 						👍 
 					</span>
 
-					<space></space>
 					{like[i]}
 					
 
@@ -107,6 +106,8 @@ function App() {
 		.then(response => response.text())
 		.then(result => alert(JSON.parse(result).body))
 		.catch(error => console.log('error', error));
+
+		console.log("success");
 	}
 
 	return (
@@ -140,7 +141,7 @@ function App() {
 					<input type="text" id="lName" />
 					<button
 						onClick={ ()=> {
-							this.callAPI( 
+							callAPI( 
 								document.getElementById('fName').value, 
 								document.getElementById('lName').value 
 							);
